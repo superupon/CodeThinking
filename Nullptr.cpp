@@ -37,7 +37,7 @@ int main()
     // With void testFoo(Foo* f)
     // This calling will cause runtime error, segmentation fault
     //testFoo(nullptr);
-    // This also fails, because invalid conversion from int to Foo&
+    // This calling will cause runtime error, segmentation fault
     testFoo(0);
     // Conclusion, pointer is a dangerous thing, compiler will no check it. use reference is better.
     return 0;
